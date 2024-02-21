@@ -309,15 +309,6 @@ GROUP BY Candidate_ID
 HAVING COUNT(DISTINCT Music_Group_ID) > 1;
 
 -- List all members of ‘Pop’ music group who are not part of any other music group
-SELECT member.*
-FROM Member_ member
-INNER JOIN Music_Group music_group ON member.Music_Group_ID = music_group.Music_Group_ID
-WHERE music_group.Music_Group_Type = 'pop'
-AND music_group.Candidate_ID NOT IN (
-    SELECT Candidate_ID FROM Member_
-    WHERE Music_Group_ID != music_group.Music_Group_ID
-);
-
 SELECT m.*
 FROM Member_ m
 INNER JOIN Music_Group mg ON m.Music_Group_ID = mg.Music_Group_ID
