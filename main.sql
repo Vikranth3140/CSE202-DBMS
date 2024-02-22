@@ -184,16 +184,16 @@ INSERT INTO Phone_Number (Phone_Number_ID, Candidate_ID, Phone_Number) VALUES
 
 -- Populate Panellist
 INSERT INTO Panellist (Panellist_ID, Panellist_Name, Panellist_Phone, Panellist_EmailID, Panellist_Industry_Experience, Panellist_MCM_Association) VALUES
-('panellist1', 'Ashok', '1111111111', 'Ashok@yahoo.com', 5, 'Senior'),
-('panellist2', 'Kumar', '2222222222', 'Kumar@gmail.com', 7, 'Senior'),
-('panellist3', 'Rao', '3333333333', 'Rao@yahoo.com', 3, 'Fresher'),
-('panellist4', 'Shastri', '4444444444', 'Shastri@gmail.com', 8, 'Senior'),
-('panellist5', 'Mishra', '5555555555', 'Mishra@yahoo.com', 4, 'Fresher'),
-('panellist6', 'Jindal', '6666666666', 'Jindal@gmail.com', 6, 'Senior'),
-('panellist7', 'Sanyam', '7777777777', 'Sanyam@yahoo.com', 2, 'Fresher'),
-('panellist8', 'Yaksh', '8888888888', 'Yaksh@gmail.com', 9, 'Senior'),
-('panellist9', 'Rahul', '9999999999', 'Rahul@yahoo.com', 1, 'Fresher'),
-('panellist10', 'Raj', '0000000000', 'Raj@gmail.com', 10, 'Senior');
+('panellist1', 'Ashok', '1111111111', 'ashok@yahoo.com', 5, 'Senior'),
+('panellist2', 'Kumar', '2222222222', 'kumar@gmail.com', 7, 'Senior'),
+('panellist3', 'Rao', '3333333333', 'rao@yahoo.com', 3, 'Fresher'),
+('panellist4', 'Shastri', '4444444444', 'shastri@gmail.com', 8, 'Senior'),
+('panellist5', 'Mishra', '5555555555', 'mishra@yahoo.com', 4, 'Fresher'),
+('panellist6', 'Jindal', '6666666666', 'jindal@gmail.com', 6, 'Senior'),
+('panellist7', 'Sanyam', '7777777777', 'sanyam@yahoo.com', 2, 'Fresher'),
+('panellist8', 'Yaksh', '8888888888', 'yaksh@gmail.com', 9, 'Senior'),
+('panellist9', 'Rahul', '9999999999', 'rahul@yahoo.com', 1, 'Fresher'),
+('panellist10', 'Raj', '0000000000', 'raj@gmail.com', 10, 'Senior');
 
 -- Populate Shortlist
 INSERT INTO Shortlist (Shortlist_ID, Candidate_ID) VALUES
@@ -257,42 +257,42 @@ INSERT INTO Music_Album (Music_Album_ID, Music_Album_Name, Music_Album_Type, Mus
 
 -- Populate Trailer_Views
 INSERT INTO Trailer_Views (Trailer_Views_ID, Music_Album_ID, Trailer_Views_Release_Date, Trailer_Views_Number_of_Visits, Trailer_Views_Number_of_Likes, Trailer_Views_Number_of_Dislikes, Trailer_Views_Deletion_Date) VALUES
-('trailer1', 'album1', '2023-01-01', 10000, 8000, 2000, '2023-01-02'),
-('trailer2', 'album2', '2023-02-01', 12000, 10000, 2000, '2023-02-02'),
-('trailer3', 'album3', '2023-03-01', 15000, 12000, 3000, '2023-03-02'),
-('trailer4', 'album4', '2023-04-01', 8000, 6000, 2000, '2023-04-02'),
-('trailer5', 'album5', '2023-05-01', 20000, 18000, 2000, '2023-05-02'),
-('trailer6', 'album6', '2023-06-01', 18000, 16000, 2000, '2023-06-02'),
-('trailer7', 'album7', '2023-07-01', 22000, 20000, 2000, '2023-07-02'),
-('trailer8', 'album8', '2023-08-01', 25000, 23000, 2000, '2023-08-02'),
-('trailer9', 'album9', '2023-09-01', 30000, 28000, 2000, '2023-09-02'),
-('trailer10', 'album10', '2023-10-01', 35000, 33000, 2000, '2023-10-02');
+('trailer1', 'album1', '2020-02-01', 10000, 8000, 2000, '2020-03-02'),
+('trailer2', 'album2', '2021-03-01', 12000, 10000, 2000, '2021-04-02'),
+('trailer3', 'album3', '2020-04-01', 15000, 12000, 3000, '2020-05-02'),
+('trailer4', 'album4', '2021-05-01', 8000, 6000, 2000, '2021-06-02'),
+('trailer5', 'album5', '2020-06-01', 20000, 18000, 2000, '2020-07-02'),
+('trailer6', 'album6', '2022-07-01', 18000, 16000, 2000, '2022-08-02'),
+('trailer7', 'album7', '2019-08-01', 22000, 20000, 2000, '2019-09-02'),
+('trailer8', 'album8', '2020-09-01', 25000, 23000, 2000, '2020-10-02'),
+('trailer9', 'album9', '2021-10-01', 30000, 28000, 2000, '2021-11-02'),
+('trailer10', 'album10', '2020-11-01', 35000, 33000, 2000, '2020-12-02');
 
 -- Populate Distributor
 INSERT INTO Distributor (Distributor_ID, Distributor_Name, Distributor_Negotiated_Price, Music_Album_ID) VALUES
-('distributor1', 'Distributor A', 10000.00, 'album1'),
-('distributor2', 'Distributor B', 12000.00, 'album2'),
-('distributor3', 'Distributor C', 15000.00, 'album3'),
-('distributor4', 'Distributor D', 8000.00, 'album4'),
-('distributor5', 'Distributor E', 20000.00, 'album5'),
-('distributor6', 'Distributor F', 18000.00, 'album6'),
-('distributor7', 'Distributor G', 22000.00, 'album7'),
-('distributor8', 'Distributor H', 25000.00, 'album8'),
-('distributor9', 'Distributor I', 30000.00, 'album9'),
-('distributor10', 'Distributor J', 35000.00, 'album10');
+('distributor1', 'Ram Sellers', 10000.00, 'album1'),
+('distributor2', 'Kumar Sellers', 12000.00, 'album2'),
+('distributor3', 'Lakshman Sellers', 15000.00, 'album3'),
+('distributor4', 'Muthuraj Sellers', 8000.00, 'album4'),
+('distributor5', 'Arjun Sellers', 20000.00, 'album5'),
+('distributor6', 'Sachin Sellers', 18000.00, 'album6'),
+('distributor7', 'Aditya Sellers', 22000.00, 'album7'),
+('distributor8', 'Harsh Sellers', 25000.00, 'album8'),
+('distributor9', 'Seth Sellers', 30000.00, 'album9'),
+('distributor10', 'Patri Sellers', 35000.00, 'album10');
 
 -- Populate Download_Request
 INSERT INTO Download_Request (Distributor_ID, Music_Album_ID, Download_Request_ID, Download_Request_URL, Download_Request_Date, Download_Request_Status) VALUES
-('distributor1', 'album1', 1, 'https://example.com/download1', '2023-01-01', 'Success'),
-('distributor2', 'album2', 2, 'https://example.com/download2', '2023-02-01', 'Failure'),
-('distributor3', 'album3', 3, 'https://example.com/download3', '2023-03-01', 'Success'),
-('distributor4', 'album4', 4, 'https://example.com/download4', '2023-04-01', 'Success'),
-('distributor5', 'album5', 5, 'https://example.com/download5', '2023-05-01', 'Failure'),
-('distributor6', 'album6', 6, 'https://example.com/download6', '2023-06-01', 'Success'),
-('distributor7', 'album7', 7, 'https://example.com/download7', '2023-07-01', 'Failure'),
-('distributor8', 'album8', 8, 'https://example.com/download8', '2023-08-01', 'Success'),
-('distributor9', 'album9', 9, 'https://example.com/download9', '2023-09-01', 'Success'),
-('distributor10', 'album10', 10, 'https://example.com/download10', '2023-10-01', 'Failure');
+('distributor1', 'album1', 1, 'https://example.com/download1', '2020-04-01', 'Success'),
+('distributor2', 'album2', 2, 'https://example.com/download2', '2021-05-01', 'Failure'),
+('distributor3', 'album3', 3, 'https://example.com/download3', '2020-06-01', 'Success'),
+('distributor4', 'album4', 4, 'https://example.com/download4', '2021-07-01', 'Success'),
+('distributor5', 'album5', 5, 'https://example.com/download5', '2020-08-01', 'Failure'),
+('distributor6', 'album6', 6, 'https://example.com/download6', '2022-09-01', 'Success'),
+('distributor7', 'album7', 7, 'https://example.com/download7', '2019-10-01', 'Failure'),
+('distributor8', 'album8', 8, 'https://example.com/download8', '2020-11-01', 'Success'),
+('distributor9', 'album9', 9, 'https://example.com/download9', '2021-12-01', 'Success'),
+('distributor10', 'album10', 10, 'https://example.com/download10', '2020-12-15', 'Failure');
 
 
 
@@ -303,22 +303,30 @@ WHERE Music_Album_Type = 'Audio'
 AND YEAR(Music_Album_Release_Date) = 2020;
 
 -- List all members who have been the member of more than one group
-SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS Num_Music_Groups
+SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS More_than_one_group
 FROM Member_
 GROUP BY Candidate_ID
 HAVING COUNT(DISTINCT Music_Group_ID) > 1;
 
 -- List all members of ‘Pop’ music group who are not part of any other music group
-SELECT m.*
-FROM Member_ m
-INNER JOIN Music_Group mg ON m.Music_Group_ID = mg.Music_Group_ID
-WHERE mg.Music_Group_Type = 'pop'
-AND NOT EXISTS (
-    SELECT 1
-    FROM Member_ m2
-    WHERE m2.Candidate_ID = m.Candidate_ID
-    AND m2.Music_Group_ID != m.Music_Group_ID
-);
+SELECT M.Member_ID, M.Music_Group_ID, M.Candidate_ID, M.Member_Role, M.Is_Director
+FROM Member_ M
+NATURAL JOIN (
+    SELECT R1.Member_ID, R1.Music_Group_ID
+    FROM Member_ R1
+    WHERE EXISTS (
+        SELECT *
+        FROM Music_Group
+        WHERE Music_Group_ID = R1.Music_Group_ID
+        AND Music_Group_Type = 'pop'
+    )
+    AND NOT EXISTS (
+        SELECT *
+        FROM Member_ R2
+        WHERE R2.Member_ID = R1.Member_ID
+        AND R2.Music_Group_ID <> R1.Music_Group_ID
+    )
+) AS MEMBER2;
 
 -- List all participants who have submitted both Audio and Video files
 SELECT Candidate_ID, Candidate_Name

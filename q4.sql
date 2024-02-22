@@ -5,22 +5,30 @@ WHERE Music_Album_Type = 'Audio'
 AND YEAR(Music_Album_Release_Date) = 2020;
 
 -- List all members who have been the member of more than one group
-SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS Num_Music_Groups
+SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS More_than_one_group
 FROM Member_
 GROUP BY Candidate_ID
 HAVING COUNT(DISTINCT Music_Group_ID) > 1;
 
 -- List all members of ‘Pop’ music group who are not part of any other music group
-SELECT m.*
-FROM Member_ m
-INNER JOIN Music_Group mg ON m.Music_Group_ID = mg.Music_Group_ID
-WHERE mg.Music_Group_Type = 'pop'
-AND NOT EXISTS (
-    SELECT 1
-    FROM Member_ m2
-    WHERE m2.Candidate_ID = m.Candidate_ID
-    AND m2.Music_Group_ID != m.Music_Group_ID
-);
+SELECT M.Member_ID, M.Music_Group_ID, M.Candidate_ID, M.Member_Role, M.Is_Director
+FROM Member_ M
+NATURAL JOIN (
+    SELECT R1.Member_ID, R1.Music_Group_ID
+    FROM Member_ R1
+    WHERE EXISTS (
+        SELECT *
+        FROM Music_Group
+        WHERE Music_Group_ID = R1.Music_Group_ID
+        AND Music_Group_Type = 'pop'
+    )
+    AND NOT EXISTS (
+        SELECT *
+        FROM Member_ R2
+        WHERE R2.Member_ID = R1.Member_ID
+        AND R2.Music_Group_ID <> R1.Music_Group_ID
+    )
+) AS MEMBER2;
 
 -- List all participants who have submitted both Audio and Video files
 SELECT Candidate_ID, Candidate_Name
