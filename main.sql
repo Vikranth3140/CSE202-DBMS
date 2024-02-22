@@ -303,7 +303,7 @@ WHERE Music_Album_Type = 'Audio'
 AND YEAR(Music_Album_Release_Date) = 2020;
 
 -- List all members who have been the member of more than one group
-SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS More_than_one_group
+SELECT Candidate_ID, COUNT(DISTINCT Music_Group_ID) AS Number_of_groups
 FROM Member_
 GROUP BY Candidate_ID
 HAVING COUNT(DISTINCT Music_Group_ID) > 1;
