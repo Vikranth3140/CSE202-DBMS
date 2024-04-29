@@ -5,39 +5,11 @@
 Topics Covered:
 
 - The Entity-Relationship Model
-
 - The Relational Model
-
 - Relational Algebra and Calculus
 - SQL
 - Data Storage and Organization
-
 - Tree-Based and Hash-Based Indexing
-
-.7.
-
-Query Evaluation and Optimization
-
-Considered: a reasonably critical and
-
-comprehensive understanding.
-
-Thoughtful: fluent, flexible and efficient
-
-understanding.
-
-Masterful: a powerful and illuminating
-
-understanding.
-
-.9.
-
-Transaction Management,
-
-Concurrency Control and Crash Recovery
-
-.10.
-
-Advanced Topics: Distributed Databases,
-Hadoop, and NoSQL and NewSQL
-Databases
+- Query Evaluation and Optimization
+- Transaction Management, Concurrency Control and Crash Recovery
+- Advanced Topics: Distributed Databases, Hadoop, and NoSQL and NewSQL Databases
